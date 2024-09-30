@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene's Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irene - Aspiring Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <div class="header-container">
-            <div class="title-container">
-                <h1>Irene Angelina</h1>
-                <h3>Aspiring Web Developer</h3>
-            </div>
-    
-            <!-- Navigation Links -->
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#hobbies">My Hobbies</a></li>
-                    <li><a href="#contact">My Contacts</a></li>
-                </ul>
-            </nav>            
+      <div class="header-container">
+        <div class="title-container">
+          <h1>Irene Angelina</h1>
+          <h3>Aspiring Web Developer</h3>
         </div>
-    </header>    
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#hobbies">My Hobbies</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <!-- About Me Section -->
-    <section class="about">
-        <div class="about-container" id="about">
-            <img src="pfp.jpg" alt="Profile Picture">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi! I'm Irene Angelina, a passionate web developer from Jakarta, Indonesia. 
-                    I like interactive and user-friendly web applications as it is easy to use and interesting to study. 
-                    Additionally, I enjoy drawing, sleeping, and more in my free time.</p>
-            </div>
+    <section id="about">
+      <div class="about-container">
+        <!-- Ensure the image is optimized and responsive -->
+        <img src="image/pfp.jpg" alt="Profile Picture of Irene" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm Irene Angelina, a passionate web developer from Jakarta,
+            Indonesia. I love building interactive and user-friendly web
+            applications. In my free time, I enjoy drawing, sleeping, and
+            exploring new technologies.
+          </p>
         </div>
+      </div>
     </section>
 
-    <!--Skills & Hobbies Section-->
+    <!-- Skills & Hobbies Section -->
     <section class="skills-hobbies">
-        <div class="skills" id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>C++</li>
-                <li>Python</li>
-            </ul>
-        </div>
-        
-        <div class="hobbies" id="hobbies">
-            <h2>My Hobbies and Interests</h2>
-            <dl>
-                <dt>Drawing</dt>
-                <dd>I love thinking of ideas and drawing them to life.</dd><br>
-                <dt>Watching Anime</dt>
-                <dd>I enjoy watching for entertainment, but sometimes the cinematography and poses serve as inspiration for my next artwork.</dd><br>
-                <dt>Traveling</dt>
-                <dd>Enjoying the local culture and cuisine is a joy, and the scenery is perfect for capturing memories or simply living in the moment.</dd>
-            </dl>
-        </div>
+      <!-- Skills Section -->
+      <div class="skills" id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML & CSS - Responsive web design and styling</li>
+          <li>JavaScript - Basic interactivity and DOM manipulation</li>
+          <li>C++ - Algorithm development</li>
+          <li>Python - Data analysis and automation</li>
+        </ul>
+      </div>
+
+      <!-- Hobbies Section -->
+      <div class="hobbies" id="hobbies">
+        <h2>My Hobbies</h2>
+        <dl>
+          <dt>Drawing</dt>
+          <dd>Bringing ideas to life through illustration.</dd>
+          <dt>Watching Anime</dt>
+          <dd>Inspiration for artwork through storytelling and visual art.</dd>
+          <dt>Traveling</dt>
+          <dd>Exploring local culture and capturing beautiful moments.</dd>
+        </dl>
+      </div>
     </section>
 
-    <!--Contact Information Section-->
-    <section class="contact">
-        <div class="contact-container" id="contact">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, you can find me on:</p>
-            <ul>
-                <li><a href="mailto:ireneangelina99@gmail.com">Email</a></li>
-                <li><a href="https://github.com/LittleDuckTape" target="_blank">GitHub</a></li>
-                <li><a href="https://www.instagram.com/angle.rin.a/" target="_blank">Instagram</a></li>
-                <li><a href="https://wa.me/62818130000" target="_blank">WhatsApp: 0818130000</a></li>
-            </ul>
-            <button onclick="alert('Resume download unavailable (ill figure out how later)')">Download Resume</button>
-        </div>
-    </section>         
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, you can find me on:</p>
+        <ul>
+          <li><a href="mailto:ireneangelina99@gmail.com">Email</a></li>
+          <li>
+            <a href="https://github.com/LittleDuckTape" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/angle.rin.a/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://wa.me/62818130000" target="_blank"
+              >WhatsApp: +62 818-1300-000</a
+            >
+          </li>
+        </ul>
+        <button
+          class="download-resume"
+          onclick="alert('Resume download unavailable at the moment. Please check back later.')"
+        >
+          Download Resume
+        </button>
+      </div>
+    </section>
 
-    <!--Footer Section-->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Irene Angelina. All rights reserved.</p>
+      <p>&copy; 2024 Irene Angelina. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

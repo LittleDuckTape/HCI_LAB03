@@ -1,0 +1,165 @@
+/* Basic layout and scroll-padding */
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #237db1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Ensures good contrast with background */
+}
+
+/* Header styles */
+header {
+  background-color: #186899;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.title-container h1,
+.title-container h3 {
+  margin: 0;
+}
+
+.title-container h3 {
+  font-size: 16px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Reduced gap for better spacing */
+  padding: 0;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  color: #bfe5fd;
+}
+
+/* Section styles */
+section {
+  padding: 120px 50px 20px; /* Adjusted padding for better spacing */
+}
+
+/* About section styles */
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Flexbox for responsiveness */
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container img {
+  width: 100%;
+  max-width: 350px; /* Ensure profile picture is responsive */
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+
+/* Skills & hobbies section styles */
+.skills-hobbies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Added flex-wrap for smaller screens */
+  gap: 40px;
+}
+
+.skills ul,
+.hobbies dl {
+  margin: 0;
+}
+
+.skills ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.hobbies dt {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.hobbies dd {
+  margin-bottom: 20px;
+}
+
+/* Contact section styles */
+.contact-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-container ul li {
+  margin-bottom: 10px;
+}
+
+.contact-container a {
+  color: #bfe5fd;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.contact-container a:hover {
+  color: #144696;
+}
+
+.download-resume {
+  background-color: #186899;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.download-resume:hover {
+  background-color: #144696;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #186899;
+  font-size: 14px;
+  color: white;
+}
